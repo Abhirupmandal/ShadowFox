@@ -1,0 +1,4 @@
+MODEL_NAME = "distilgpt2"
+TEMPERATURE = 0.8
+TOP_K = 50
+CACHE_SIZE = 100

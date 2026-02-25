@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    padding: 40px;
+}
+
+textarea {
+    width: 500px;
+    height: 120px;
+    font-size: 18px;
+}
+
+#corrected {
+    color: green;
+    margin-top: 10px;
+}
+
+#predictions {
+    font-weight: bold;
+}
