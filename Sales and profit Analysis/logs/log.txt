@@ -1,0 +1,33 @@
+Program started
+Program started
+Data loaded
+Feature engineering done
+Plot done
+Split done
+Model trained
+Evaluation done
+Model saved
+Model loaded
+Prediction done
+Program finished
+Program started
+Program started
+Program started
+Data loaded
+Program started
+Data loaded
+Feature engineering done
+Program started
+Data loaded
+Feature engineering done
+Plot done
+Split done
+Model trained
+Evaluation done
+Model saved
+Model loaded
+Prediction done
+Program finished
+start
+start
+done
