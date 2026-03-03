@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <title>Car Price Prediction</title>
-
-<link rel="stylesheet"
-href="{{ url_for('static', filename='style.css') }}">
-
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
-
 <div class="container">
 
 <h1>Car Price Prediction</h1>
 
 <form action="/predict" method="post">
 
-<input type="number" step="0.01"
+<input type="number" step="0.01" min="0"
 name="present_price"
-placeholder="Showroom Price">
+placeholder="Showroom Price"
+required>
 
-<input type="number"
+<input type="number" min="0"
 name="kms_driven"
-placeholder="Kilometers Driven">
+placeholder="Kilometers Driven"
+required>
 
-<input type="number"
+<input type="number" min="0" max="5"
 name="owner"
-placeholder="Number of Owners">
+placeholder="Number of Owners"
+required>
 
-<input type="number"
+<input type="number" min="0"
 name="car_age"
-placeholder="Car Age">
+placeholder="Car Age"
+required>
 
 <select name="fuel">
 <option value="Petrol">Petrol</option>
@@ -50,25 +48,17 @@ placeholder="Car Age">
 </select>
 
 <button type="submit">
-
 Predict Price
-
 </button>
 
 </form>
 
-{% if prediction_text %}
-
+{% if prediction_text is not none %}
 <div class="result">
-
 Predicted Price : ₹ {{ prediction_text }} Lakh
-
 </div>
-
 {% endif %}
 
 </div>
-
 </body>
-
 </html>
